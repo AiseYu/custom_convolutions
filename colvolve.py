@@ -1,9 +1,9 @@
 import numpy as np
 import cv2 as cv
-img= cv.imread('Images/bliss.jpg')
+img= cv.imread('Images/bliss.jpg') #image path
 cv.imshow('bliss', img)
 
-test_kernel=  float(1)*np.array([[[0,0,0],[0,0,0],[0,0,0]],[[0,0,0],[1,1,1],[0,0,0]],[[0,0,0],[0,0,0],[0,0,0]]])
+test_kernel=  float(1)*np.array([[[0,0,0],[0,0,0],[0,0,0]],[[0,0,0],[0,0,0],[0,0,0]],[[0,0,0],[0,0,0],[0,0,0]]]) #edit your own kernal
 
 def convolve(kernel, image):
     temp=image.copy()
